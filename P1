@@ -1,0 +1,10 @@
+a)Do newly created child processes, C1 and C2,have their own copies of the different variables declared in the parent process(e.g. index, now, value, outBuffer,outFD)?
+	yes they have their own copies of the variabels.
+b)
+Is there a fixed order of execution between child processes C1 and C2? And how do you 
+explain that? 
+
+	No there is no fixed order the order is determined by the OS and we do not know this order
+
+c)Modify the code so C1 will completes printing its output before C2 starts printing its own output. 
+	put a wait int the if(C1 == 0) statemtent right before the for loop so this waits for C2 before it prints its own stuff.
